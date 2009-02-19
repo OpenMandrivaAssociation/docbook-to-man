@@ -39,7 +39,7 @@ modifications by David Bolen with Debian changes.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	OPT="%{rpmcflags}" \
+	OPT="%{optflags}" \
 	ROOT=%{_prefix}
 
 %install
