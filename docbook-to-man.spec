@@ -1,7 +1,7 @@
 %define name		docbook-to-man
 %define deb_release	26
 %define version		2.0.0
-%define release %mkrel	2
+%define release     %mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -9,12 +9,12 @@ Release:	%{release}
 Summary:	Converter from DocBook SGML into roff man macros
 License:	MIT
 Group:		Publishing
+URL:		http://www.oasis-open.org/docbook/tools/dtm/
 Source0:	http://ftp.debian.org/debian/pool/main/d/docbook-to-man/%{name}_%{version}.orig.tar.gz
 Patch0:		%{name}_%{version}-%{deb_release}.diff.gz
 Patch10:	%{name}-debian.patch
 Patch11:	%{name}-opt.patch
 Patch12:	%{name}-PLD.patch
-URL:		http://www.oasis-open.org/docbook/tools/dtm/
 BuildRequires:	docbook-dtd41-sgml
 BuildRequires:	OpenSP
 Requires:	docbook-dtd41-sgml
