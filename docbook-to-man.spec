@@ -1,7 +1,7 @@
 %define name		docbook-to-man
 %define deb_release	26
 %define version		2.0.0
-%define release     %mkrel 5
+%define release     %mkrel 6
 
 Name:		%{name}
 Version:	%{version}
