@@ -43,17 +43,17 @@ modifications by David Bolen with Debian changes.
 	ROOT=%{_prefix}
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/sgml,%{_mandir}/man{1,5}}
+rm -rf %{buildroot}
+install -d %{buildroot}{%{_bindir},%{_datadir}/sgml,%{_mandir}/man{1,5}}
 
 %{__make} install \
-	ROOT=$RPM_BUILD_ROOT%{_prefix}
+	ROOT=%{buildroot}%{_prefix}
 
-install Doc/{docbook-to-man.1,instant.1} $RPM_BUILD_ROOT%{_mandir}/man1
-install Doc/transpec.1 $RPM_BUILD_ROOT%{_mandir}/man5/transpec.5
+install Doc/{docbook-to-man.1,instant.1} %{buildroot}%{_mandir}/man1
+install Doc/transpec.1 %{buildroot}%{_mandir}/man5/transpec.5
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
