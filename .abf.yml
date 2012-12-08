@@ -1,2 +1,3 @@
 sources:
-  "docbook-to-man_2.0.0.orig.tar.gz:"	2c38d53e80d3304bea2f51cb7e9ea4102c9a515f
+  "docbook-to-man_2.0.0-26.diff.gz": 2539b199b5997c43f8c5f855344a82c1b5bf18f8
+  "docbook-to-man_2.0.0.orig.tar.gz": 2c38d53e80d3304bea2f51cb7e9ea4102c9a515f
