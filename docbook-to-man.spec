@@ -1,9 +1,12 @@
+# (tpg) fix build 	
+%global optflags %{optflags} -fcommon
+
 %define deb_release	26
 
 Summary:	Converter from DocBook SGML into roff man macros
 Name:		docbook-to-man
 Version:	2.0.0
-Release:	17
+Release:	18
 License:	MIT
 Group:		Publishing
 Url:		http://www.oasis-open.org/docbook/tools/dtm/
@@ -34,7 +37,7 @@ patch -p1 -s < debian/patches/01-conglomeration.dpatch
 %patch12 -p1
 
 %build
-%make \
+%make_build \
 	CC="%{__cc}" \
 	OPT="%{optflags}" \
 	ROOT=%{_prefix}
@@ -53,7 +56,6 @@ install Doc/transpec.1 %{buildroot}%{_mandir}/man5/transpec.5
 %{_bindir}/docbook-to-man
 %{_bindir}/instant
 %{_datadir}/sgml/transpec
-%{_mandir}/man1/docbook-to-man.1*
-%{_mandir}/man1/instant.1*
-%{_mandir}/man5/transpec.5*
-
+%doc %{_mandir}/man1/docbook-to-man.1*
+%doc %{_mandir}/man1/instant.1*
+%doc %{_mandir}/man5/transpec.5*
