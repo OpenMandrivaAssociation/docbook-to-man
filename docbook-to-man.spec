@@ -6,7 +6,7 @@
 Summary:	Converter from DocBook SGML into roff man macros
 Name:		docbook-to-man
 Version:	2.0.0
-Release:	18
+Release:	19
 License:	MIT
 Group:		Publishing
 Url:		http://www.oasis-open.org/docbook/tools/dtm/
