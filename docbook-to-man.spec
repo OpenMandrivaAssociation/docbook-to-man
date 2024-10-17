@@ -9,7 +9,7 @@ Version:	2.0.0
 Release:	19
 License:	MIT
 Group:		Publishing
-Url:		http://www.oasis-open.org/docbook/tools/dtm/
+Url:		https://www.oasis-open.org/docbook/tools/dtm/
 Source0:	http://ftp.debian.org/debian/pool/main/d/docbook-to-man/%{name}_%{version}.orig.tar.gz
 Patch0:		%{name}_%{version}-%{deb_release}.diff.gz
 Patch10:	%{name}-debian.patch
