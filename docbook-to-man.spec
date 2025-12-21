@@ -16,6 +16,7 @@ Patch10:	%{name}-debian.patch
 Patch11:	%{name}-opt.patch
 Patch12:	%{name}-PLD.patch
 
+BuildRequires:	make
 BuildRequires:	docbook-dtd41-sgml
 BuildRequires:	OpenSP
 Requires:	docbook-dtd41-sgml
